@@ -23,7 +23,7 @@ while i < n:
         else: 
             newline += '*'
             
-    pattern = ''.join(newline)
+    pattern = newline
     print(pattern)
     i += 1
 
