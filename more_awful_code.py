@@ -13,10 +13,12 @@ while i < n:
     for j in range(len(string)):
         left = j-1
         right = (j+1)%len(string)
+        #checks if characters are the same or not
         if string[left]==string[right]: 
             new += '-'
         else: 
             new += '*'
+    #redefine string to make a new string of '*' and '_'
     string=''.join(new)
     print(string)
     i += 1
