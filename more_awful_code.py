@@ -5,6 +5,7 @@
 
 
 n = 10
+
 pattern = 'et cetera'
 print(pattern)
 
@@ -12,6 +13,7 @@ i = 0
 while i < n:
     
     # print('at', j)
+
     newline = ''
     for j in range(len(pattern)):
         
@@ -25,5 +27,6 @@ while i < n:
             
     pattern = newline
     print(pattern)
+    
     i += 1
 
