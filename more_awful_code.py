@@ -5,24 +5,25 @@
 
 
 n = 10
-s = 'et cetera'
-print(s)
+pattern = 'et cetera'
+print(pattern)
 
 i = 0
 while i < n:
+    
     # print('at', j)
-    new = ''
-    for j in range(len(s)):
+    newline = ''
+    for j in range(len(pattern)):
         
         left = j-1
-        right = (j+1) % len(s)
+        right = (j+1) % len(pattern)
         
-        if s[left] == s[right]: 
-            new += '-'
+        if pattern[left] == pattern[right]: 
+            newline += '-'
         else: 
-            new += '*'
+            newline += '*'
             
-    s = ''.join(new)
-    print(s)
+    pattern = ''.join(newline)
+    print(pattern)
     i += 1
 
