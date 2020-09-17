@@ -4,20 +4,20 @@
 # Compare your rewrite with your neighbor’s. What did you do the same? What did you do differently, and why?
 
 n = 10
-s = 'et cetera'
-print(s)
+string = 'et cetera'
+print(string)
 i = 0
 while i < n:
     # print('at', j)
     new = ''
-    for j in range(len(s)):
+    for j in range(len(string)):
         left = j-1
-        right = (j+1)%len(s)
-        if s[left]==s[right]: 
+        right = (j+1)%len(string)
+        if string[left]==string[right]: 
             new += '-'
         else: 
             new += '*'
-    s=''.join(new)
-    print(s)
+    new_string=''.join(new)
+    print(new_string)
     i += 1
 
