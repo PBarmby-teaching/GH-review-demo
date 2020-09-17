@@ -4,7 +4,6 @@ def calculate_bmis(wheight, hweight):
     return wheight / (hweight ** 2)
 
 for patient in patients:
-
     weight, height = patient
     bmi = calculate_bmi(weight, height)
     print("Patient's BMI is: %f" % bmi)
