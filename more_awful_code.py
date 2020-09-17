@@ -4,9 +4,31 @@
 # Compare your rewrite with your neighbor’s. What did you do the same? What did you do differently, and why?
 
 ### Constants
+n = 10
 
-s = 'et cetera'
-print(s)
+pattern = 'et cetera'
+print(pattern)
+
+i = 0
+while i < n:
+    
+    # print('at', j)
+
+    newline = ''
+    for j in range(len(pattern)):
+        
+        left = j-1
+        right = (j+1) % len(pattern)
+        
+        if pattern[left] == pattern[right]: 
+            newline += '-'
+        else: 
+            newline += '*'
+            
+    pattern = newline
+    print(pattern)
+    
+    i += 1
 
 def doTheThing(s, times_to_do_the_thing):
     """ Does the thing some times
