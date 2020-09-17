@@ -11,10 +11,15 @@ while i < n:
     # print('at', j)
     new = ''
     for j in range(len(s)):
+        
         left = j-1
         right = (j+1)%len(s)
-        if s[left]==s[right]: new += '-'
-        else: new += '*'
+        
+        if s[left]==s[right]: 
+            new += '-'
+        else: 
+            new += '*'
+            
     s=''.join(new)
     print(s)
     i += 1
