@@ -17,7 +17,7 @@ while i < n:
             new += '-'
         else: 
             new += '*'
-    new_string=''.join(new)
-    print(new_string)
+    string=''.join(new)
+    print(string)
     i += 1
 
